@@ -1,0 +1,12 @@
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\bin\Debug\net6.0\MyProject.Entity.deps.json
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\bin\Debug\net6.0\MyProject.Entity.dll
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\bin\Debug\net6.0\MyProject.Entity.pdb
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\obj\Debug\net6.0\MyProject.Entity.csproj.AssemblyReference.cache
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\obj\Debug\net6.0\MyProject.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\obj\Debug\net6.0\MyProject.Entity.AssemblyInfoInputs.cache
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\obj\Debug\net6.0\MyProject.Entity.AssemblyInfo.cs
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\obj\Debug\net6.0\MyProject.Entity.csproj.CoreCompileInputs.cache
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\obj\Debug\net6.0\MyProject.Entity.dll
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\obj\Debug\net6.0\refint\MyProject.Entity.dll
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\obj\Debug\net6.0\MyProject.Entity.pdb
+D:\MyFolders\MyProject\MyProject\MyProject.Entity\obj\Debug\net6.0\ref\MyProject.Entity.dll

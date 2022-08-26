@@ -1,0 +1,17 @@
+D:\MyFolders\MyProject\MyProject\MyProject.Data\bin\Debug\net6.0\MyProject.Data.deps.json
+D:\MyFolders\MyProject\MyProject\MyProject.Data\bin\Debug\net6.0\MyProject.Data.runtimeconfig.json
+D:\MyFolders\MyProject\MyProject\MyProject.Data\bin\Debug\net6.0\MyProject.Data.dll
+D:\MyFolders\MyProject\MyProject\MyProject.Data\bin\Debug\net6.0\MyProject.Data.pdb
+D:\MyFolders\MyProject\MyProject\MyProject.Data\bin\Debug\net6.0\MyProject.Entity.dll
+D:\MyFolders\MyProject\MyProject\MyProject.Data\bin\Debug\net6.0\MyProject.Entity.pdb
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\MyProject.Data.csproj.AssemblyReference.cache
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\MyProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\MyProject.Data.AssemblyInfoInputs.cache
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\MyProject.Data.AssemblyInfo.cs
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\MyProject.Data.csproj.CoreCompileInputs.cache
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\MyProject.Data.csproj.CopyComplete
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\MyProject.Data.dll
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\refint\MyProject.Data.dll
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\MyProject.Data.pdb
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\MyProject.Data.genruntimeconfig.cache
+D:\MyFolders\MyProject\MyProject\MyProject.Data\obj\Debug\net6.0\ref\MyProject.Data.dll
