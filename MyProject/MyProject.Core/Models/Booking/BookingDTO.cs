@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyProject.Entity
+namespace MyProject.Core.Models.Booking
 {
-    public class Booking
+    public class BookingDTO
     {
         public int id { get; set; }
         public int user_id { get; set; }

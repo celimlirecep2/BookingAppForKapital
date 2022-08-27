@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using MyProject.Core.Abstract;
 using MyProject.Data;
 using MyProject.Entity;
@@ -13,14 +14,13 @@ namespace MyProject.Core.Repository
     public class BookingRepository:GenericRepository<Booking>,IBookingRepository
     {
         private readonly MyProjectDbContext _context;
+        private readonly IMapper _mapper;
 
-        public BookingRepository(MyProjectDbContext context)
+        public BookingRepository(MyProjectDbContext context,IMapper mapper):base(context,mapper)
         {
             this._context = context;
+            this._mapper = mapper;
         }
-        public async Task<List<Booking>> GetAllBookingAsync()
-        {
-            return await _context.bookings.ToListAsync();
-        }
+        
     }
 }

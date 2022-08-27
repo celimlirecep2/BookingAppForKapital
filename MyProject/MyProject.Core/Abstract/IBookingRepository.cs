@@ -9,6 +9,6 @@ namespace MyProject.Core.Abstract
 {
     public interface IBookingRepository:IGenericRepositoy<Booking>
     {
-        public Task<List<Booking>> GetAllBookingAsync();
+        
     }
 }

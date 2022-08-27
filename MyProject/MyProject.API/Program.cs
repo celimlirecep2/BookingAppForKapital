@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MyProject.Core.Abstract;
+using MyProject.Core.Configuration;
 using MyProject.Core.Repository;
 using MyProject.Data;
 
@@ -10,6 +11,7 @@ var connectionString = builder.Configuration.GetConnectionString("BookingWebsite
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddSwaggerGen();
 try
 {

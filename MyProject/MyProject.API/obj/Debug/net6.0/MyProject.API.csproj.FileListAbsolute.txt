@@ -267,3 +267,5 @@ D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\runtimes\win\lib
 D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\MyProject.Core.dll
 D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\MyProject.Core.pdb
+D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\AutoMapper.dll
+D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
