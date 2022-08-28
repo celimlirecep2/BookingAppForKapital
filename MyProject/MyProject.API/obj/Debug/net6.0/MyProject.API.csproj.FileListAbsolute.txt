@@ -269,3 +269,8 @@ D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\MyProject.Core.d
 D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\MyProject.Core.pdb
 D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\AutoMapper.dll
 D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\Microsoft.AspNetCore.OData.dll
+D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\Microsoft.OData.Core.dll
+D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\Microsoft.OData.Edm.dll
+D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\Microsoft.OData.ModelBuilder.dll
+D:\MyFolders\MyProject\MyProject\MyProject.API\bin\Debug\net6.0\Microsoft.Spatial.dll

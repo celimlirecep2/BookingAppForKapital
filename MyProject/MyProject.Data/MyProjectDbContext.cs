@@ -18,5 +18,11 @@ namespace MyProject.Data
         public DbSet<Booking> bookings { get; set; }
         public DbSet<Company> company { get; set; }
         public DbSet<User> users { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Booking>().HasKey(i => i.id);
+            modelBuilder.Entity<Booking>().HasIndex(i => i.id).IsUnique();
+        }
     }
 }

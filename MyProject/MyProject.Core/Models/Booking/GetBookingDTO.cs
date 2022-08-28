@@ -9,6 +9,7 @@ namespace MyProject.Core.Models.Booking
     public class GetBookingDTO
     {
         public int id { get; set; }
-        
+       
+
     }
 }

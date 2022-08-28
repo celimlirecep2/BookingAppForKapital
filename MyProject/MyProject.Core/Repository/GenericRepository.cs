@@ -7,6 +7,7 @@ using MyProject.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,13 +38,14 @@ namespace MyProject.Core.Repository
             return _mapper.Map<TResult>(entity);
         }
 
-        public async Task DeleteAsync(int id)
+      
+
+        public  async Task DeleteAsync(int id)
         {
             var entity = await GetAsync(id);
             if (entity is null)
-            {
                 throw new ArgumentNullException(nameof(DeleteAsync));
-            }
+            
             _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
         }
@@ -59,21 +61,7 @@ namespace MyProject.Core.Repository
             return await _context.Set<T>().ToListAsync();
         }
 
-        public async Task<PagesResult<TResult>> GetAllAsync<TResult>(QueryParameters queryParameters)
-        {
-            var totalSıze = await _context.Set<T>().CountAsync();
-            var items = await _context.Set<T>()
-                .Skip(queryParameters.StartIndex)
-                .Take(queryParameters.PageSize)
-                .ProjectTo<TResult>(_mapper.ConfigurationProvider)
-                .ToListAsync();
-            return new PagesResult<TResult>
-            {
-                Items = items,
-                RecordNumber = queryParameters.PageSize,
-                TotalCount = totalSıze
-            };
-        }
+       
 
         public async Task<List<TResult>> GetAllAsync<TResult>()
         {
@@ -97,9 +85,12 @@ namespace MyProject.Core.Repository
             if (result is null)
                 throw new ArgumentNullException(nameof(GetAsync));
             return _mapper.Map<TResult>(result);
-
-
         }
+        public async Task<T> GetLastAsync(Expression<Func<T, int>> filter)
+        {
+            return await _context.Set<T>().OrderBy(filter).LastAsync();
+        }
+
 
         public async Task UpdateAsync(T entity)
         {

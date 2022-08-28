@@ -1,4 +1,6 @@
-﻿using MyProject.Entity;
+﻿using MyProject.Core.Models;
+using MyProject.Core.Models.Booking;
+using MyProject.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,7 @@ namespace MyProject.Core.Abstract
 {
     public interface IBookingRepository:IGenericRepositoy<Booking>
     {
-        
+         Task DeleteAsyncByConfirmed(int id);
+        Task<PagesResult> GetAllAsyncWithOtherInfomation(QueryParameters queryParameters);
     }
 }

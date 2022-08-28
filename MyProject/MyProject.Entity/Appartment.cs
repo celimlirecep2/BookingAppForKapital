@@ -10,14 +10,14 @@ namespace MyProject.Entity
     {
         public int id { get; set; }
         public string name { get; set; }
-        public string iamage { get; set; }
+        public string image { get; set; }
         public string country { get; set; }
         public string city { get; set; }
         public string zip_code { get; set; }
-        public string adress { get; set; }
+        public string address { get; set; }
         public string address2 { get; set; }
-        public int latitude { get; set; }
-        public int longitude { get; set; }
+        public double latitude { get; set; }
+        public double longitude { get; set; }
         public string direction { get; set; }
         public int booked { get; set; }
 

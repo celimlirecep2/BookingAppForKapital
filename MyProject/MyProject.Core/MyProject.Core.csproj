@@ -14,10 +14,4 @@
     <ProjectReference Include="..\MyProject.Data\MyProject.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\Appartment\" />
-    <Folder Include="Models\Company\" />
-    <Folder Include="Models\User\" />
-  </ItemGroup>
-
 </Project>

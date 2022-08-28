@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using MyProject.Core.Abstract;
 using MyProject.Core.Models;
 using MyProject.Core.Models.Booking;
@@ -18,15 +19,16 @@ namespace MyProject.API.Controllers
             this._bookingRepo = bookingRepo;
         }
 
-        //api/booking/getallbookings/?startindex=0&pageNumber=1
+        // api/booking/getallbookings/?startindex=0&pageNumber=1
         [HttpGet]
-        public async Task<ActionResult<PagesResult<BookingDTO>>> GetAllBookings([FromQuery] QueryParameters queryParameters)
+        [EnableQuery]
+        public async Task<ActionResult<PagesResult>> GetAllBookings([FromQuery] QueryParameters queryParameters)
         {
-            var pagesBookingResult= await _bookingRepo.GetAllAsync<BookingDTO>(queryParameters);
+            var pagesBookingResult= await _bookingRepo.GetAllAsyncWithOtherInfomation(queryParameters);
             return Ok(pagesBookingResult);
         }
 
-
+        // PUT: api/booking/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBooking(int id, UpdateBookingDTO updateBookingDTO)
         {
@@ -44,21 +46,30 @@ namespace MyProject.API.Controllers
             }
             return NoContent();
         }
-
+        // POST: api/booking
         [HttpPost]
         public async Task<ActionResult<BookingDTO>> PostBooking(CreateBookingDTO bookingDTO)
         {
-
+            var lastValue = await _bookingRepo.GetLastAsync(i=>i.id);
+            bookingDTO.id = lastValue.id+1;
             var country = await _bookingRepo.AddAsync<CreateBookingDTO, GetBookingDTO>(bookingDTO);
             return CreatedAtAction("PostBooking", new { id = country.id }, country);
         }
 
         // DELETE: api/booking/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCountry(int id)
+        public async Task<IActionResult> DeleteBooking(int id)
         {
-            await _bookingRepo.DeleteAsync(id);
+            await _bookingRepo.DeleteAsyncByConfirmed(id);
             return NoContent();
+        }
+
+        // GET: api/booking/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<BookingDTO>> GetBooking(int id)
+        {
+            var bookingDto = await _bookingRepo.GetAsync<BookingDTO>(id);
+            return Ok(bookingDto);
         }
 
     }
